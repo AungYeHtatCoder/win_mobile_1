@@ -14,18 +14,18 @@
 						<!-- BEGIN row -->
 						<div class="row">
 							<!-- BEGIN col-9 -->
-							<div class="col-xl-9">
+							<div class="col-xl-12">
 								<ul class="breadcrumb">
 									<li class="breadcrumb-item"><a href="{{ route('home') }}">Dashboard</a></li>
 									<li class="breadcrumb-item active">Permission Dashboard</li>
 								</ul>
-								
+
 								<h1 class="page-header">
 									Permission Dashboard <small>page header description goes here...</small>
 								</h1>
-								
+
 								<hr class="mb-4">
-								
+
 								<!-- BEGIN #datatable -->
 								<div id="datatable" class="mb-5">
 									<h4><a href="{{ route('admin.permissions.create') }}" class="btn btn-primary">New Permission Create</a></h4>
@@ -40,28 +40,28 @@
 														<th>Created At</th>
 														<th>Updated At</th>
 														<th>Action</th>
-														
+
 													</tr>
 												</thead>
-            <tbody>
-             @foreach($permissions as $key => $permission)
-             <tr>
+                                                <tbody>
+                                                    @foreach($permissions as $key => $permission)
+                                                    <tr>
 														<td>{{ ++$key }}</td>
 														<td>{{ $permission->title }}</td>
 														<td>{{ $permission->created_at->format('F j, Y') }}</td>
-         					<td>{{ $permission->updated_at->format('F j, Y') }}</td>
-														<td>
-               <a href="{{ route('admin.permissions.edit', $permission->id) }}" class="btn btn-primary btn-sm">Edit</a>
-               <a href="{{ route('admin.permissions.show', $permission->id) }}" class="btn btn-info btn-sm">Show</a>
-<form action="{{ route('admin.permissions.destroy', $permission->id) }}" method="POST">
-           @csrf
-           @method('DELETE')
-           <button type="submit" class="btn btn-danger btn-sm">Del</button>
-          </form>
-              </td>
-													</tr>
-             @endforeach
-            </tbody>
+                                                        <td>{{ $permission->updated_at->format('F j, Y') }}</td>
+                                                        <td>
+                                                            <a href="{{ route('admin.permissions.edit', $permission->id) }}" class="btn btn-primary btn-sm">Edit</a>
+                                                            <a href="{{ route('admin.permissions.show', $permission->id) }}" class="btn btn-info btn-sm">Show</a>
+                                                            <form class="d-inline" action="{{ route('admin.permissions.destroy', $permission->id) }}" method="POST">
+                                                                @csrf
+                                                                @method('DELETE')
+                                                                <button type="submit" class="btn btn-danger btn-sm">Del</button>
+                                                            </form>
+                                                        </td>
+                                                    </tr>
+                                                    @endforeach
+                                                </tbody>
 											</table>
 										</div>
 										{{-- <div class="card-arrow">
@@ -77,24 +77,12 @@
 								</div>
 
 								<!-- END #datatable -->
-								
+
 								<!-- BEGIN #bootstrapTable -->
 
 								<!-- END #bootstrapTable -->
 							</div>
 							<!-- END col-9-->
-							<!-- BEGIN col-3 -->
-							<div class="col-xl-3">
-								<!-- BEGIN #sidebar-bootstrap -->
-								<nav id="sidebar-bootstrap" class="navbar navbar-sticky d-none d-xl-block">
-									<nav class="nav">
-										<a class="nav-link" href="#datatable" data-toggle="scroll-to">Datatable</a>
-										{{-- <a class="nav-link" href="#bootstrapTable" data-toggle="scroll-to">Bootstrap table</a> --}}
-									</nav>
-								</nav>
-								<!-- END #sidebar-bootstrap -->
-							</div>
-							<!-- END col-3 -->
 						</div>
 						<!-- END row -->
 					</div>

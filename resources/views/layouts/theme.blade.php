@@ -9,7 +9,7 @@
 							<div class="row gx-2">
 								<div class="col-6">
 									<a href="javascript:;" data-toggle="theme-mode-selector" data-theme-mode="dark" class="app-theme-mode-link active">
-										<div class="img"><img src="{{('admin_app/assets/img/mode/dark.jpg')}}" class="object-fit-cover" height="76" width="76" alt="Dark Mode"></div>
+										<div class="img"><img src="{{ asset('admin_app/assets/img/mode/dark.jpg') }}" class="object-fit-cover" height="76" width="76" alt="Dark Mode"></div>
 										<div class="text">Dark</div>
 									</a>
 								</div>
@@ -22,7 +22,7 @@
 							</div>
 						</div>
 						<!-- END card-body -->
-						
+
 						<!-- BEGIN card-arrow -->
 						<div class="card-arrow">
 							<div class="card-arrow-top-left"></div>
@@ -32,7 +32,7 @@
 						</div>
 						<!-- END card-arrow -->
 					</div>
-					
+
 					<div class="small fw-bold text-inverse mb-1">Theme Color</div>
 					<div class="card mb-3">
 						<!-- BEGIN card-body -->
@@ -55,7 +55,7 @@
 							<!-- END theme-list -->
 						</div>
 						<!-- END card-body -->
-						
+
 						<!-- BEGIN card-arrow -->
 						<div class="card-arrow">
 							<div class="card-arrow-top-left"></div>
@@ -65,7 +65,7 @@
 						</div>
 						<!-- END card-arrow -->
 					</div>
-					
+
 					<div class="small fw-bold text-inverse mb-1">Theme Cover</div>
 					<div class="card">
 						<!-- BEGIN card-body -->
@@ -103,7 +103,7 @@
 							<!-- END theme-cover -->
 						</div>
 						<!-- END card-body -->
-						
+
 						<!-- BEGIN card-arrow -->
 						<div class="card-arrow">
 							<div class="card-arrow-top-left"></div>

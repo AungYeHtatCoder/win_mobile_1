@@ -1,5 +1,5 @@
 <div id="header" class="app-header">
-			
+
 			<!-- BEGIN desktop-toggler -->
 			<div class="desktop-toggler">
 				<button type="button" class="menu-toggler" data-toggle-class="app-sidebar-collapsed" data-dismiss-class="app-sidebar-toggled" data-toggle-target=".app">
@@ -9,7 +9,7 @@
 				</button>
 			</div>
 			<!-- BEGIN desktop-toggler -->
-			
+
 			<!-- BEGIN mobile-toggler -->
 			<div class="mobile-toggler">
 				<button type="button" class="menu-toggler" data-toggle-class="app-sidebar-mobile-toggled" data-toggle-target=".app">
@@ -19,20 +19,20 @@
 				</button>
 			</div>
 			<!-- END mobile-toggler -->
-			
-			
-			
+
+
+
 			<!-- BEGIN brand -->
 			<div class="brand">
 				<a href="index.html" class="brand-logo">
 					<span class="brand-img">
-						<span class="brand-img-text text-theme">W M</span>
+						<span class="brand-img-text text-theme">W</span>
 					</span>
 					<span class="brand-text">Win Mobile</span>
 				</a>
 			</div>
 			<!-- END brand -->
-			
+
 			<!-- BEGIN menu -->
 			<div class="menu">
 				<div class="menu-item dropdown">
@@ -184,7 +184,7 @@
 						       <form action="{{ route('logout') }}" method="post">
         @csrf
         <button type="submit" class="dropdown-item d-flex align-items-center">
-         
+
 									LOGOUT <i class="bi bi-toggle-off ms-auto text-theme fs-16px my-n1"></i>
         </button>
        </form>
@@ -192,7 +192,7 @@
 				</div>
 			</div>
 			<!-- END menu -->
-			
+
 			<!-- BEGIN menu-search -->
 			<form class="menu-search" method="POST" name="header_search_form">
 				<div class="menu-search-container">
